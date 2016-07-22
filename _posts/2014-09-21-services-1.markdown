@@ -1,7 +1,7 @@
 ---
 layout: default
  img: ipad.png
-category: Services
+category: Teaching
 title: Teaching
 description: |
 ---
