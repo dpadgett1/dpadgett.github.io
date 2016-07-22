@@ -1,8 +1,10 @@
 ---
 layout: default
-img: ipad.png
+# img: ipad.png
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
+title: Teaching
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+   <p> I have been teaching Intro to Ethics and Intro to Logic at Northwest Vista College. I am scheduled to teach those courses again in the Spring, as well as a section of Introduction to Philosophy. A copy of the syllabi for Ethics and Logic can be found on this page. (Note: dates on the syllabi are for the Fall 2015 courses.)
+  
+  <p> Baylor Honors Colloq.
