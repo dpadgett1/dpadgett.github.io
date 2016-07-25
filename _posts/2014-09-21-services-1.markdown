@@ -1,6 +1,5 @@
 ---
 layout: default
- img: ipad.png
 category: Teaching
 title: Teaching
 description: |
