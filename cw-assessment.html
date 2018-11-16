@@ -5,7 +5,7 @@ permalink: /cw-assessment
 ---
 <h1>The Challenge</h1>
 Each year, the Cadet Wing (CW) assesses the over 4000 cadets at the US Air Force Academy. 
-Two components of this&ndash;the personal appearance inspection and cadet interview&ndash;had been carried out on paper or used a survey tool to log responses. 
+Two components of this&mdash;the personal appearance inspection and cadet interview&mdash;had been carried out on paper or used a survey tool to log responses. 
 This process required hundreds of hours of work to compile and analyze the data at the end of the assessment period, aside from the number of hours spent carrying out the inspections and interviews. 
 With the recent acquisition of a Learning Management System (LMS), the CW wanted to utilize the LMS to save time and have all the data entered and stored in one location. 
 They contacted our team, and I took the lead on this project, carrying out the design and development of the products, and providing training on how to use them. 
@@ -36,6 +36,25 @@ This decision hinged on four considerations:
 <p> Our subsequent meetings were spent working out three components of the user experience: how the assessor would select the appropriate rubric; how each rubric would calculate points; and whether to include an automatically assigned pass/fail grade after the assessment and, if so, whether to color code it.</p>
  
 <h2>Choosing the Right Rubric</h2>
+<p>For getting the right rubric, we had to decide:
+  <ul>
+    <li> The best way to group the cadets (create one course in the LMS with all of the cadets, create one course per class year, create one class per squadron, etc).</li>
+    <li> The best way to access the rubrics within a course.</li>
+</ul>
+Ultimately, it made the most sense to have one course per class year.</p>
+
+<p>Within the LMS, a rubric is associated with a column in the course’s gradebook. 
+  Any column can have more than one rubric associated with it. 
+  With the personal appearance inspection, there were two different rubrics, depending on the choice of uniform. 
+  So, one way to place the rubrics in the course was to associate both with one column, which would look like this:
+  <img src="/img/01-RubricSelection" alt="Choosing between the two rubrics"></p>
+
+<p> Once they made their choice, they would see the rubric they selected, as well as a choice to use the other rubric (see top-right):
+  <img src="/img/02-Rubric1" alt="The first rubric option" style="float:right">
+After filling out the selected rubric they could submit the score or move onto the next one and submit:
+  <img src="/img/02-Rubric2" alt="The second rubric option" style="float:left">
+One downside of this approach is that it would be easy to mistakenly fill in the wrong rubric: seeing <q>1 of 2</q> might make an assessor believe they had two rubrics to fill in instead of one.</p>
+
 
   <h2>Assign Points</h2>
 
