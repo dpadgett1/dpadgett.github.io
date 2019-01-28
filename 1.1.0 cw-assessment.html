@@ -10,13 +10,13 @@ Each year, the Cadet Wing (CW) assesses the over 4000 cadets at the US Air Force
 <p>At our kickoff meeting, the CW leadership stated their goals for this project and described how the inspection and interview took place. Given the nature of the project, I determined that iterative design was the best way to arrive at the optimal products. So, we agreed to meet at regular intervals so I could show them working prototypes and conduct usability testing in order to gather feedback to improve the design of the products.</p>
 
 <h3>User Research</h3>
-<p>During our initial meeting we also discussed who would be using the products. Our team was unable to conduct our own user research, so <font class="text-info">we relied on demographics provided by the leadership</font>, some of whom would also be assessors. The leadership informed us that <font class="text-primary">the assessors</font>:
+<p>During our initial meeting we also discussed who would be using the products. Our team was unable to conduct our own user research, so <font class="text-info">we relied on demographics provided by the leadership</font>, some of whom would also be assessors. The leadership informed us that <font class="text-info">the assessors</font>:
   <ul>
     <li> Are time crunched: they do not have much time to learn a new tool or tools, and assessments need to be completed efficiently.</li>
     <li> Exhibit a spectrum of comfort and abilities with technology: the product needs to be easy to use and intuitive.</li>
     <li> Feel pressure to have their squadron receive high marks.</li>
 </ul>
-While the assessors woud be the primary users, I recognized that those handling the data after the assessment would be users as well (even if they didn't see themselves as such). Because some of the data handlers were those in leadership roles, I was able to informally interview them to find out their needs. From our interactions, I gathered that <font class="text-primary">those analyzing the data</font>: 
+While the assessors woud be the primary users, I recognized that those handling the data after the assessment would be users as well (even if they didn't see themselves as such). Because some of the data handlers were those in leadership roles, I was able to informally interview them to find out their needs. From our interactions, I gathered that <font class="text-info">those analyzing the data</font>: 
   <ul>
     <li> Wanted granularity in the data: they needed to be able to track comments, which interview questions were asked, and how many points were given for each category.</li>
     <li> Were concerned about the integrity of the data.</li>
@@ -26,9 +26,9 @@ While the assessors woud be the primary users, I recognized that those handling 
 </p>
 
 <h3>Initial Prototypes: Choosing the Best Tool for the Job</h3>
-<p>With this information about the two user groups, I developed initial prototypes using two different tools in the LMS: rubrics and tests. During my second meeting, my goal was to come to a decision on which tool to use for each component of the assessment. At this meeting I used <font class="text-info">low-fidelity prototypes</font> to demonstrate the capabilities of each tool, noting how they would impact the user experience with respect to each user group's tasks: inputting data, and collecting and analyzing data.</p>
+<p>With this information about the two user groups, I developed initial prototypes using two different tools in the LMS: rubrics and tests. During my second meeting, my goal was to come to a decision on which tool to use for each component of the assessment. At this meeting I used low-fidelity prototypes to demonstrate the capabilities of each tool, noting how they would impact the user experience with respect to each user group's tasks: inputting data, and collecting and analyzing data.</p>
   
-By the end of this meeting we concluded that <font class="text-primary">the rubric tool was the tool for both</font> the appearance inspection (a straightforward use of a rubric) and the interview (a rather innovative use of the tool). This decision hinged on <font class="text-primary">six considerations related to the users' needs</font>:
+By the end of this meeting <font class="text-success">we concluded that the rubric tool was the tool for both</font> the appearance inspection (a straightforward use of a rubric) and the interview (a rather innovative use of the tool). This decision hinged on <font class="text-primary">six considerations related to the users' needs</font>:
 <ol>
   <li> Assessors would only need to learn and use on tool instead of two.</li>
   <li> The workflow for the assessor was simplified: the best option for the test tool would involve multiple accounts and thereby slow down the assessment process, whereas the rubric tool required a single sign-on.</li>
@@ -46,10 +46,10 @@ By the end of this meeting we concluded that <font class="text-primary">the rubr
     <li> The best way to group the cadets (create one course in the LMS with all of the cadets, create one course per class year, create one class per squadron, etc).</li>
     <li> The best way to access the rubrics within a course.</li>
 </ul>
-In what follows, you'll see screenshots of pieces of the prototypes I developed for each meeting. <font class="text-info">I decided to build prototypes for each meeting because they were quick and easy to build, and because it would allow me to conduct usability testing during each meeting: I could give the leadership access to a testing course so they could get a sense for how the tool would function.</font></p>
+In what follows, you'll see screenshots of pieces of the prototypes I developed for each meeting. <font class="text-primary">I decided to build prototypes for each meeting because they were quick and easy to build, and because it would allow me to conduct usability testing during each meeting: I could give the leadership access to a testing course so they could get a sense for how the tool would function.</font></p>
 
 <h4>Grouping the Cadets</h4>
-<p>To use the rubric for assessment, we needed to house it within a course in the LMS. Because of that, we had to decide how many courses to use. Ultimately, it made the most sense to have one course per class year, or four courses total. On the data collection side, having only one course would have centralized the data more&mdash;but it would have been much more cumbersome for the assessors. And while we could also have created one course per squadron, which would have had some benefit for the assessors, everyone agreed that creating 40 courses was not worth the marginal improvement in the assessor's workflow.</p>
+<p>To use the rubric for assessment, we needed to house it within a course in the LMS. Because of that, we had to decide how many courses to use. <font class="text-success">Ultimately, it made the most sense to have one course per class year, or four courses total.</font> On the data collection side, having only one course would have centralized the data more&mdash;but it would have been much more cumbersome for the assessors. And while we could also have created one course per squadron, which would have had some benefit for the assessors, everyone agreed that creating 40 courses was not worth the marginal improvement in the assessor's workflow.</p>
   
 <p>With the number of courses settled, we had a clear picture of the user journey for completing each assessment.
 <br><img class="img-responsive" src="/img/CW-Rubric-Journey.jpg" alt="The user journey for either rubric"><br></p>
@@ -62,7 +62,7 @@ In what follows, you'll see screenshots of pieces of the prototypes I developed 
   <img class="img-responsive" src="/img/02-Rubric-VerticalFlow.png" alt="The first and second rubric options"><br>
 One downside of this approach is that it would be easy to mistakenly fill in the wrong rubric: seeing <q>1 of 2</q> might make an assessor believe they had two rubrics to fill in instead of one.</p>
 
-<p>The second option, which was what the leadership chose, was to have two columns, one for one uniform choice and a second for the other. The rubric looked the same but no longer had <q>1 of 2</q> and the option to choose a second rubric once it was open:
+<p>The second option, <font class="text-success">which was what the leadership chose</font>, was to have two columns, one for one uniform choice and a second for the other. The rubric looked the same but no longer had <q>1 of 2</q> and the option to choose a second rubric once it was open:
   <br><img class="img-responsive" src="/img/03-Rubric.PNG" alt="The chosen rubric, with text box"><br>
 (A quick note about the user interface: the LMS does not let you change the number of columns for certain rows, hence the “N/A DO NOT USE THIS BOX” boxes. If I had my druthers, I would have changed the number of options available in those rows. Also note the ability to add written feedback about a given mark.)</p>
 
@@ -72,20 +72,18 @@ One downside of this approach is that it would be easy to mistakenly fill in the
 
 <p>Given the length of the rubric, the other consideration for the interview and personal appearance inspection was whether to include the verbal description of their assessment in each cell (look below the percentage in each cell in the following screenshots):
 <br><img class="img-responsive" src="/img/04-Interview-Comparison.png" alt="The top rubric doesn't have the categories in cell whereas the bottom does."><br>
-Since the rubrics would require scrolling to reach the bottom, I advised including the verbal description in each box so the assessor didn’t have to remember which column corresponded to which description.</p>
+Since the rubrics would require scrolling to reach the bottom, I advised including the verbal description in each box so the assessor didn’t have to remember which column corresponded to which description. <font class="text-success">The leadership endorsed my recommendation in the final design.</font></p>
 
 <p>For the uniform inspection rubric, there were two ways the rubric could calculate points: each category could be seen as an opportunity to gain points (i.e. a cadet started with a low score and worked his or her way to a higher score), or an opportunity to lose points (i.e. they started with a high score and lost points for infractions). Working through the choice of point-scoring schemas provided an opportunity to consult the leadership on a heretofore unconsidered user: the cadet. While the assessors and staff would be the primary users of these rubrics, the cadets would eventually see the rubrics, and it was important to think about how they would view the point distribution: should they view the inspection as an opportunity to prove themselves or to not make a mistake?
 <br>
 <img class="img-responsive" src="/img/06-Schema-Small1.PNG" alt="Point schema: lose points.">
 <img class="img-responsive" src="/img/06-Schema-Small2.PNG" alt="Point schema: earn points.">
 <br>
-Ultimately, the leadership chose the option where cadets are trying not to lose points.</p>
+Between these, the leadership chose the option where cadets are trying not to lose points.</p>
 
 <h3>Assigning a Grade: An Sneak Peak Before Analyzing the Data</h3>
 <p>One feature of the LMS is that you can create a grading schema to convert a numerical score to a letter grade. Again keeping the cadet in mind, I presented this option to the CW leadership as something we could add in. Once the inspection or interview rubric was completed and saved, the LMS would show a pass or fail grade along with the score received on each assessment. The leadership liked the thought of providing a letter grade so the cadets knew whether they passed, so we implemented a grading schema based on their requirements into the final solution.</p>
 
 <h2>Outcome</h2>
 <p>Once the design process was over, I trained over 80 people who would use the rubrics and train 120 others on how to use the rubrics. 
-  The feedback we received at the end of the assessment period was overwhelmingly positive. 
-  Among the positive feedback we received was a letter of commendation from the Vice Commandant of Cadets noting how <q>Dr. Padgett’s innovative placement of the Personal Appearance Inspection (PAI) into Blackboard is a game changer for us</q>. 
-  And the numbers do not lie about that: not only were the users happy with the experience provided by the rubrics, but overall these rubrics saved CW staff 915 hours of work (per assessment cycle)!</p>
+  The feedback we received at the end of the assessment period was overwhelmingly positive. Among the positive feedback we received was a letter of commendation from the Vice Commandant of Cadets noting how <q>Dr. Padgett’s innovative placement of the Personal Appearance Inspection (PAI) into Blackboard is a game changer for us</q>. And the numbers do not lie about that: not only were the users happy with the experience provided by the rubrics, but overall <font class="text-success">these rubrics saved CW staff 915 hours of work (per assessment cycle)!</font></p>
