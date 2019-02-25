@@ -3,7 +3,7 @@ layout: static1
 title: Brew Better Coffee
 permalink: /brew-better-coffee
 ---
-<p>DISCLAIMER: This is not a project done for a company. Making coffee is a part of my, and many of my friends', morning routine. I'm always looking for easy ways to up my coffee game, so I thought I'd design an app to do just that. (Plus, it gave me an opportinity to further refine my Sketch App skills.)</p>
+<p>DISCLAIMER: This is not a project done for a company. Making coffee is a part of my, and many of my friends', morning routine. I'm always looking for easy ways to up my coffee game, so I thought I'd design a mobile app to do just that. Apart from being an app I'd actually use, designing it also let me focus on developing my prototyping skills using the Sketch App.</p>
 
 <h2>The Challenge</h2>
 <p> </p>
@@ -13,6 +13,9 @@ permalink: /brew-better-coffee
 <h2>Functionality and Priorities</h2>
 
 <h2>Wireframes and Prototypes</h2>
+
+<h2>Apple Watch Prototypes</h2>
+<p>The main feature of this thing is the stopwatch. A minimal Apple watch app lets users record their brew using their watch. They can also rate their brew, and later on add notes from their phone (or use Siri to dictate them). </p>
 
 <h2>Results</h2>
 <p>As I mentioned at the top, this was a fictional project. My aim was to design an app to solve a problem that I (and my friends) have when it comes to making pour-over coffee: how do we get better making only one or two cups a day, and without any mentoring? This app makes it simple and easy torecord important metrics for brewing coffee. With some built in reminders about what you liked and what you didn't (and maybe a little help from some AI), everyone can brew better coffee.</p>
