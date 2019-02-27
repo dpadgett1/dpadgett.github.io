@@ -61,28 +61,27 @@ permalink: /cw-assessment-short
 <h4>Grouping the Cadets</h4>
 <p>To be used, rubrics have to be housed within a course in the LMS. So, we had to decide how many courses to create. The two main considerations for making this decision were:
   <ol>
-    <li>The tradeoff: On the data collection side, having only one course would have centralized the data more&mdash;but it would have been much more cumbersome for the assessors who would need to wade through lots more students and face a slower load time. On the other side, we could make life easier for the assessors by creating one course per squadron (i.e. 40 courses total), since assessments were done (mostly) by squadron leaders</li>
-    <li> The roles: assessments were mostly done by squadron leaders, but some cadets also were assessors. This created a problem because a user can only have one role in a course.</li>
+    <li> The tradeoff: At one extreme, we could make data collection easy by using only one course&mdash;but it would have been much more cumbersome for the assessors who would need to wade through lots more students and face a slower load time. At the other extreme, we could make life easier for the assessors by creating one course per squadron (i.e. 40 courses total), since assessments were done (mostly) by squadron leaders</li>
+    <li> The roles: assessments were <i>mostly</i> done by squadron leaders, but some cadets also were assessors. This created a problem because a user can only have one role in a course, essentially ruling out the one course option as well as the 40 course option.</li>
 </p>
-Ultimately, it made the most sense to have one course per class year, or four courses total. We'd then design filters to help assessors find cadets quickly. everyone agreed that creating 40 courses was not worth the marginal improvement in the assessor's workflow.
+Ultimately, we settled on one course per class year, or four courses total. With four courses we could accommodate the double role that some cadets had. While each course would have over 1,000 cadets in it, the load times would still be quick and we could design filters to help assessors find cadets quickly.
   
 <h4>Accessing the Rubrics</h4>
-<p>Within the LMS, a rubric is associated with a column in the course’s gradebook. Any column can have more than one rubric associated with it. With the personal appearance inspection, there were two different rubrics, depending on the choice of uniform. So, one way to place the rubrics in the course was to associate both with one column, which would look like this:<br>
-  <img class="img-responsive" src="/img/01-RubricSelection.PNG" alt="Choosing between the two rubrics"></p>
+<p>The appearance assessment had different rubrics for the two uniforms a cadet could wear. We had to decide when an assessor would choose the appropriate rubric: after launching the rubric window or before.</p>
 
-<p> Once they made their choice, they would see the rubric they selected, as well as a choice to use the other rubric (see top-right). After filling out the selected rubric they could submit the score or move onto the next one and submit:<br>
-  <img class="img-responsive" src="/img/02-Rubric-VerticalFlow.png" alt="The first and second rubric options"><br>
-One downside of this approach is that it would be easy to mistakenly fill in the wrong rubric: seeing <q>1 of 2</q> might make an assessor believe they had two rubrics to fill in instead of one.</p>
+<p>Launching the rubric window then choosing the rubric would keep the data in one column, but would make it easy to mistakenly fill in the wrong rubric: seeing <q>1 of 2</q> in the rubric window might make an assessor believe they had two rubrics to fill in instead of one.<br> <!--Maybe carousel the images?!?!-->
+<img class="img-responsive" src="/img/01-RubricSelection.PNG" alt="Choosing between the two rubrics"></p>
+<img class="img-responsive" src="/img/02-Rubric-VerticalFlow.png" alt="The first and second rubric options"></p>
 
-<p><font class="text-success">The leadership chose the second option</font>, which was to have two columns, one for one uniform choice and a second for the other. The rubric looked the same but no longer had <q>1 of 2</q> and the option to choose a second rubric once it was open:
+<p>We chose to have the assessor choose the rubric before launching the rubric window. This would store the data in two columns in a spreadsheet, but essentially eliminated the possibility of filling in two rubrics. Fewer errors was worth the extra column.
   <br><img class="img-responsive" src="/img/03-Rubric.PNG" alt="The chosen rubric, with text box"><br>
 (A quick note about the user interface: the LMS does not let you change the number of columns for certain rows, hence the “N/A DO NOT USE THIS BOX” boxes. If I had my druthers, I would have changed the number of options available in those rows. Also note the ability to add written feedback about a given mark.)</p>
 
 <h4>Assigning Points</h4>
-<p>One major component of this project was determining the best way to allocate points. For the interview I had to make sure that the first few rows of the rubric had no points, since they contained the questions the interviewer asked the cadets and were not worth any points. I realized that I could do this by exploiting the weighting function of the rubric, and assigning a 0% weight to those rows and non-zero weight to the rest (pretty neat, right?&mdash;which questions were asked were tracked by selecting the appropriate question within the rubric, while the rest of the rows were used for evaluating the cadet’s responses).
+<p>I also had to make sure the math worked out as needed. For the interview the first few rows of the rubric had no points, since they contained the questions the interviewer asked the cadets and were not worth any points. To accomplish this I leveraged the weighting function of the rubric, assigning a 0% weight to those rows and non-zero weight to the rest (pretty neat, right?&mdash;which questions were asked were tracked by selecting the appropriate question within the rubric, while the rest of the rows were used for evaluating the cadet’s responses).
 <br><img class="img-responsive" src="/img/04-Interview-Headers.PNG" alt="The interview rubric, with the categories in each cell."></p>
   
-<p>For the uniform inspection rubric, there were two ways the rubric could calculate points: each category could be seen as an opportunity to gain points (i.e. a cadet started with a low score and worked his or her way to a higher score), or an opportunity to lose points (i.e. they started with a high score and lost points for infractions). <font class="text-primary">Working through the choice of point-scoring schemas provided an opportunity to consult the leadership on a heretofore unconsidered user: the cadet.</font> While the assessors and staff would be the primary users of these rubrics, the cadets would eventually see the rubrics, and it was important to think about how they would view the point distribution: should they view the inspection as an opportunity to prove themselves or to not make a mistake?
+<p>For the uniform inspection rubric, there were two ways the rubric could calculate points: each category could be seen as an opportunity to gain points (i.e. a cadet started with a low score and worked his or her way to a higher score), or an opportunity to lose points (i.e. they started with a high score and lost points for infractions).
 <br>
 <img class="img-responsive" src="/img/06-Schema-Small1.PNG" alt="Point schema: lose points.">
 <img class="img-responsive" src="/img/06-Schema-Small2.PNG" alt="Point schema: earn points.">
@@ -90,12 +89,12 @@ One downside of this approach is that it would be easy to mistakenly fill in the
 Between these, the leadership chose the option where cadets are trying not to lose points.</p>
 
 <h4>Descriptions for Categories</h4>
-<p>Given the length of the rubric, the other consideration for the interview and personal appearance inspection was whether to include the verbal description of their assessment in each cell (look below the percentage in each cell in the following screenshots):
+<p>Given the length of the rubric, the final consideration for rubrics was whether to include the verbal description of their assessment in each cell (look below the percentage in each cell in the following screenshots):
 <br><img class="img-responsive" src="/img/04-Interview-Comparison.png" alt="The top rubric doesn't have the categories in cell whereas the bottom does."><br>
-Since the rubrics would require scrolling to reach the bottom, I advised including the verbal description in each box so the assessor didn’t have to remember which column corresponded to which description. <font class="text-success">The leadership endorsed my recommendation in the final design.</font></p>
+Since the rubrics would require scrolling to reach the bottom, I advised, and the leadership approved of, including the verbal description in each box so the assessor didn’t have to remember which column corresponded to which description.
 
 <h4>Assigning a Grade: An Sneak Peak Before Analyzing the Data</h4>
-<p>One feature of the LMS is that you can create a grading schema to convert a numerical score to a letter grade. Again keeping the cadet in mind, I presented this option to the CW leadership as something we could add in. Once the inspection or interview rubric was completed and saved, the LMS would show a pass or fail grade along with the score received on each assessment. The leadership liked the thought of providing a letter grade so the cadets knew whether they passed, so we implemented a grading schema based on their requirements into the final solution.</p>
+<p>Our final decision was how assessment grades were displayed in the course. Keeping the cadet in mind, I suggested adding a feature that would display a pass or fail grade along with the score received on each assessment once the inspection or interview rubric was completed and saved. The leadership liked the thought of providing a letter grade so the cadets knew whether they passed, so we added this feature.</p>
 </section>
 
 <section id="Results">
