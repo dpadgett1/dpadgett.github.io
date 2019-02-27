@@ -57,17 +57,17 @@ These journey maps helped explain the pro's and con's of the two viable solution
 <img class="img-responsive" src="/img/02-Rubric1.PNG" alt="Early mockup of the appearance inspection as a rubric."></p>
 
 <p>We settled on the rubric for the following reasons:
-  <ol>
+  <ul>
   <li> Assessors would only need to learn and use on tool instead of two.</li>
   <li> The workflow for the assessor was simplified: the best option for the test tool would involve multiple accounts and thereby slow down the assessment process, whereas the rubric tool required a single sign-on.</li>
   <li> Data retrieval with a rubric would be much cleaner than with the test tool.</li>
   <li> It would be easy to track changes in the data, thus helping ensure its integrity.</li>
   <li> The ability to provide written feedback in addition to a numerical score.</li>
   <li> The ability to track which interview questions were asked (since the interviewer was allowed to ask one of several questions per category).</li>
-</ol>  
+</ul>  
 
 <h4>Grouping the Cadets</h4>
-<p>To be used, rubrics have to be housed within a course in the LMS. So, we had to decide how many courses to create. The two main considerations for making this decision were:
+<p>To be used, rubrics have to be housed within a course in the LMS. So, we had to decide how many courses to create. The four main considerations for making this decision were:
   <ol>
     <li> <u>Page Load Times</u>: fewer courses would put more cadets in a course, meaning a longer load time.</li>
     <li> <u>Ease of Finding Cadet</u>: more courses would act as a filter when trying to find a cadet to assess.</li>
@@ -85,15 +85,17 @@ Ultimately, I advocated one course per class year, or four courses total for the
 </p>
   
 <h4>Accessing the Rubrics</h4>
-<p>The appearance assessment had different rubrics for the two uniforms a cadet could wear. We had to decide when an assessor would choose the appropriate rubric: after launching the rubric window or before.</p>
-
-<p>Launching the rubric window then choosing the rubric would keep the data in one column, but would make it easy to mistakenly fill in the wrong rubric: seeing <q>1 of 2</q> in the rubric window might make an assessor believe they had two rubrics to fill in instead of one.<br> <!--Maybe carousel the images?!?!-->
-<img class="img-responsive" src="/img/01-RubricSelection.PNG" alt="Choosing between the two rubrics"><br>
-<img class="img-responsive" src="/img/02-Rubric-VerticalFlow.png" alt="The first and second rubric options"></p>
-
-<p>We chose to have the assessor choose the rubric before launching the rubric window. This would store the data in two columns in a spreadsheet, but essentially eliminated the possibility of filling in two rubrics. Fewer errors was worth the extra column.
-  <br><img class="img-responsive" src="/img/03-Rubric.PNG" alt="The chosen rubric, with text box"><br>
-(A quick note about the user interface: the LMS does not let you change the number of columns for certain rows, hence the “N/A DO NOT USE THIS BOX” boxes. If I had my druthers, I would have changed the number of options available in those rows. Also note the ability to add written feedback about a given mark.)</p>
+<p>The appearance assessment had different rubrics for the two uniforms a cadet could wear. We had to decide when an assessor would choose the appropriate rubric: after launching the rubric window or before. The two workflows would be
+<ol> <!--Maybe carousel the images?!?!-->
+<li>Launch the rubric window; choose the rubric; complete the rubric; save and submit the rubric.<br>
+  <img class="img-responsive" src="/img/01-RubricSelection.PNG" alt="Choosing between the two rubrics"><br>
+  <img class="img-responsive" src="/img/02-Rubric-VerticalFlow.png" alt="The first and second rubric options"></li>
+<li>Choose the rubric; launch the rubric window; complete the rubric; save and submit the rubric.<br>
+  <br><img class="img-responsive" src="/img/03-Rubric.PNG" alt="The chosen rubric, with text box"></li>
+</ol>
+We chose the second option. With the first option it wasn't clear to the assessor whether they were done after filling in one rubric (note the <q>1 of 2</q> text), but there was no confusion that you were done with the second option. This meant an extra column of data, fewer errors inputting data was worth the extra column.</p>
+  
+<p>(A quick note about the user interfaces above: the LMS does not let you change the number of columns for certain rows, hence the “N/A DO NOT USE THIS BOX” boxes. If I had my druthers, I would have changed the number of options available in those rows. Also note the ability to add written feedback about a given mark.)</p>
 
 <h4>Assigning Points</h4>
 <p>I also had to make sure the math worked out as needed. For the interview the first few rows of the rubric had no points, since they contained the questions the interviewer asked the cadets and were not worth any points. To accomplish this I leveraged the weighting function of the rubric, assigning a 0% weight to those rows and non-zero weight to the rest (pretty neat, right?&mdash;which questions were asked were tracked by selecting the appropriate question within the rubric, while the rest of the rows were used for evaluating the cadet’s responses).
