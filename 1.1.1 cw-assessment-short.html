@@ -37,40 +37,35 @@ permalink: /cw-assessment-short
 
 <h3>UX Methods</h3>
 
+
+<p>With the number of courses settled, we had a clear picture of the user journey for completing each assessment.
+<br><img class="img-responsive" src="/img/CW-Rubric-Journey.jpg" alt="The user journey for either rubric"><br></p>
+
+
 <h3>Decisions</h3>
+<p>One of the initial decision was whether the LMS could be leveraged to achieve the goal. After defining the problem, it was clear that it could. We then had to make the following decisions during the design and development of the rubrics.</p>
 
-</section>
+<h4>Choosing the Best Tool</h4>
+<p>I quickly concluded that the LMS had two tools that could be used to achieve our goal: the tests tool and the rubric tool. I created some mockups of each to showcase the functionality.[EVIDENCE]</p>
 
-
-<h3>Initial Prototypes: Choosing the Best Tool for the Job</h3>
-<p>With this information about the two user groups, I developed initial prototypes using two different tools in the LMS: rubrics and tests. During my second meeting, my goal was to come to a decision on which tool to use for each component of the assessment. At this meeting I used low-fidelity prototypes to demonstrate the capabilities of each tool, noting how they would impact the user experience with respect to each user group's tasks: inputting data, and collecting and analyzing data.</p>
-  
-By the end of this meeting <font class="text-success">we concluded that the rubric tool was the tool for both</font> the appearance inspection (a straightforward use of a rubric) and the interview (a rather innovative use of the tool). This decision hinged on <font class="text-primary">six considerations related to the users' needs</font>:
-<ol>
+<p>We settled on the rubric for the following reasons:
+  <ol>
   <li> Assessors would only need to learn and use on tool instead of two.</li>
   <li> The workflow for the assessor was simplified: the best option for the test tool would involve multiple accounts and thereby slow down the assessment process, whereas the rubric tool required a single sign-on.</li>
   <li> Data retrieval with a rubric would be much cleaner than with the test tool.</li>
   <li> It would be easy to track changes in the data, thus helping ensure its integrity.</li>
   <li> The ability to provide written feedback in addition to a numerical score.</li>
   <li> The ability to track which interview questions were asked (since the interviewer was allowed to ask one of several questions per category).</li>
-</ol>
+</ol>  
+
+<h4>Grouping the Cadets<h4>
+<p>To be used, rubrics have to be housed within a course in the LMS. So, we had to decide how many courses to create. The two main considerations for making this decision were:
+  <ol>
+    <li>The tradeoff: On the data collection side, having only one course would have centralized the data more&mdash;but it would have been much more cumbersome for the assessors who would need to wade through lots more students and face a slower load time. On the other side, we could make life easier for the assessors by creating one course per squadron (i.e. 40 courses total), since assessments were done (mostly) by squadron leaders</li>
+    <li> The roles: assessments were mostly done by squadron leaders, but some cadets also were assessors. This created a problem because a user can only have one role in a course.</li>
 </p>
-<p> Our subsequent meetings were spent working out three components of the user experience: how the assessor would select the appropriate rubric; how each rubric would calculate points; and whether to include an automatically assigned pass/fail grade after the assessment and, if so, whether to color code it.</p>
- 
-<h3>Desiging the Right Rubric: Prototype, Test, Repeat</h3>
-<p>Once the rubric tool was chosen, we started focusing on designing the rubrics to provide an optimal user experience. To get there, we had to decide:
-  <ul>
-    <li> The best way to group the cadets (create one course in the LMS with all of the cadets, create one course per class year, create one class per squadron, etc).</li>
-    <li> The best way to access the rubrics within a course.</li>
-</ul>
-In what follows, you'll see screenshots of pieces of the prototypes I developed for each meeting. <font class="text-primary">I decided to build prototypes for each meeting because they were quick and easy to build, and because it would allow me to conduct usability testing during each meeting: I could give the leadership access to a testing course so they could get a sense for how the tool would function.</font></p>
-
-<h4>Grouping the Cadets</h4>
-<p>To use the rubric for assessment, we needed to house it within a course in the LMS. Because of that, we had to decide how many courses to use. <font class="text-success">Ultimately, it made the most sense to have one course per class year, or four courses total.</font> On the data collection side, having only one course would have centralized the data more&mdash;but it would have been much more cumbersome for the assessors. And while we could also have created one course per squadron, which would have had some benefit for the assessors, everyone agreed that creating 40 courses was not worth the marginal improvement in the assessor's workflow.</p>
+Ultimately, it made the most sense to have one course per class year, or four courses total. We'd then design filters to help assessors find cadets quickly. everyone agreed that creating 40 courses was not worth the marginal improvement in the assessor's workflow.
   
-<p>With the number of courses settled, we had a clear picture of the user journey for completing each assessment.
-<br><img class="img-responsive" src="/img/CW-Rubric-Journey.jpg" alt="The user journey for either rubric"><br></p>
-
 <h4>Accessing the Rubrics</h4>
 <p>Within the LMS, a rubric is associated with a column in the course’s gradebook. Any column can have more than one rubric associated with it. With the personal appearance inspection, there were two different rubrics, depending on the choice of uniform. So, one way to place the rubrics in the course was to associate both with one column, which would look like this:<br>
   <img class="img-responsive" src="/img/01-RubricSelection.PNG" alt="Choosing between the two rubrics"></p>
@@ -83,14 +78,10 @@ One downside of this approach is that it would be easy to mistakenly fill in the
   <br><img class="img-responsive" src="/img/03-Rubric.PNG" alt="The chosen rubric, with text box"><br>
 (A quick note about the user interface: the LMS does not let you change the number of columns for certain rows, hence the “N/A DO NOT USE THIS BOX” boxes. If I had my druthers, I would have changed the number of options available in those rows. Also note the ability to add written feedback about a given mark.)</p>
 
-<h3>Assigning Points</h3>
+<h4>Assigning Points</h4>
 <p>One major component of this project was determining the best way to allocate points. For the interview I had to make sure that the first few rows of the rubric had no points, since they contained the questions the interviewer asked the cadets and were not worth any points. I realized that I could do this by exploiting the weighting function of the rubric, and assigning a 0% weight to those rows and non-zero weight to the rest (pretty neat, right?&mdash;which questions were asked were tracked by selecting the appropriate question within the rubric, while the rest of the rows were used for evaluating the cadet’s responses).
 <br><img class="img-responsive" src="/img/04-Interview-Headers.PNG" alt="The interview rubric, with the categories in each cell."></p>
-
-<p>Given the length of the rubric, the other consideration for the interview and personal appearance inspection was whether to include the verbal description of their assessment in each cell (look below the percentage in each cell in the following screenshots):
-<br><img class="img-responsive" src="/img/04-Interview-Comparison.png" alt="The top rubric doesn't have the categories in cell whereas the bottom does."><br>
-Since the rubrics would require scrolling to reach the bottom, I advised including the verbal description in each box so the assessor didn’t have to remember which column corresponded to which description. <font class="text-success">The leadership endorsed my recommendation in the final design.</font></p>
-
+  
 <p>For the uniform inspection rubric, there were two ways the rubric could calculate points: each category could be seen as an opportunity to gain points (i.e. a cadet started with a low score and worked his or her way to a higher score), or an opportunity to lose points (i.e. they started with a high score and lost points for infractions). <font class="text-primary">Working through the choice of point-scoring schemas provided an opportunity to consult the leadership on a heretofore unconsidered user: the cadet.</font> While the assessors and staff would be the primary users of these rubrics, the cadets would eventually see the rubrics, and it was important to think about how they would view the point distribution: should they view the inspection as an opportunity to prove themselves or to not make a mistake?
 <br>
 <img class="img-responsive" src="/img/06-Schema-Small1.PNG" alt="Point schema: lose points.">
@@ -98,9 +89,14 @@ Since the rubrics would require scrolling to reach the bottom, I advised includi
 <br>
 Between these, the leadership chose the option where cadets are trying not to lose points.</p>
 
-<h3>Assigning a Grade: An Sneak Peak Before Analyzing the Data</h3>
-<p>One feature of the LMS is that you can create a grading schema to convert a numerical score to a letter grade. Again keeping the cadet in mind, I presented this option to the CW leadership as something we could add in. Once the inspection or interview rubric was completed and saved, the LMS would show a pass or fail grade along with the score received on each assessment. The leadership liked the thought of providing a letter grade so the cadets knew whether they passed, so we implemented a grading schema based on their requirements into the final solution.</p>
+<h4>Descriptions for Categories</h4>
+<p>Given the length of the rubric, the other consideration for the interview and personal appearance inspection was whether to include the verbal description of their assessment in each cell (look below the percentage in each cell in the following screenshots):
+<br><img class="img-responsive" src="/img/04-Interview-Comparison.png" alt="The top rubric doesn't have the categories in cell whereas the bottom does."><br>
+Since the rubrics would require scrolling to reach the bottom, I advised including the verbal description in each box so the assessor didn’t have to remember which column corresponded to which description. <font class="text-success">The leadership endorsed my recommendation in the final design.</font></p>
 
+<h4>Assigning a Grade: An Sneak Peak Before Analyzing the Data</h4>
+<p>One feature of the LMS is that you can create a grading schema to convert a numerical score to a letter grade. Again keeping the cadet in mind, I presented this option to the CW leadership as something we could add in. Once the inspection or interview rubric was completed and saved, the LMS would show a pass or fail grade along with the score received on each assessment. The leadership liked the thought of providing a letter grade so the cadets knew whether they passed, so we implemented a grading schema based on their requirements into the final solution.</p>
+</section>
 
 <section id="Results">
 <h2>Outcome</h2>
