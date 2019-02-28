@@ -16,29 +16,84 @@ permalink: /ftb-redesign-short
 <section id="process">
 <h2>The Design Process</h2>
 <h3>User Research</h3>
-<p>I combined my experience as a faculty member along with informal interviews to create personas for the 5 different types of faculty I discovered during my research. 
+<p>I combined my experience as a faculty member and instructional designer along with informal interviews to create personas for the 5 different types of faculty I discovered during my research. 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vQQojCNcy7bVGM3VZEIszkn1-W4So6RxpEDPbI-lZTvincEJtNEuliuof_VzvISeZH-QAvnroc8SJLu/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
-Common to all personas was a desire for information to be easy to find and the navigation to be “intuitive”. 
-In this case, an “intuitive” navigation is one which maps a three-component mental model faculty have for building a course: course content and delivery, course administration, and assessment.
+Common to all personas was a desire for information to be easy to find and the navigation to be “intuitive”. In this case, an “intuitive” navigation is one which maps a three-component mental model faculty have for building a course: course content and delivery, course administration, and assessment.
 </p>
 
 
 <h3>UX Methods</h3>
-The main UX skills used in this project were:
+Along with user research, the main UX skills used in this project were:
 <ul>
-  <li><u>Information Architecture</u>: </li>
-  <li><u>Sketching and Wireframing</u>: </li>
-  <li><u>UI Style Guide</u>: </li>
+  <li><u>Information Architecture</u>: The original site navigation did not reflect the mental model faculty use for building courses, so I redesigned the site navigation and link names to reflect that model.</li>
+  <li><u>Sketching and Wireframing</u>: Creating content templates required ideating, and then sketching and wireframing, solutions for presenting content to faculty.</li>
+  <li><u>UI Style Guide</u>: The headers and fonts varied from page to page in the original Toolbox, so I created a style guide to standardize the look and feel of the site.</li>
 </ul>
 
 
-<h3>Interaction Design Decisions</h3>
-<p> </p>
+<h3>Design Decisions</h3>
+<p>Guided by the personas, I identified three problems with Toolbox as it waws created: 
+<ol type=1>
+    <li> Site navigation that was not “intuitive” because it did not reflect the mental model faculty have for course building.</li>
+    <li> Content was not catered to the needs of the faculty at USAFA.</li>
+    <li> No consistent use of fonts, headings, and colors to visually organize site content.</li>
+</ol></p>
 
-<h4>DECISION ONE</h4>
-<p> </p>
+<h4>Site Navigation</h4>
+<p>The original site navigation did not reflect the mental model faculty use for building their courses. 
+<br><img class="img-responsive" src="/img/OLD-FacultyToolbox-Menu1.png" alt="Original Faculty Toolbox navigation menu."><br>
+For instance, "Inside Your Course" was too broad a label, and even when I opended it content wasn't organized according the mental model.
+<br><img class="img-responsive" src="/img/OLD-FTB-InsideYourCourse.PNG" alt="Inside Your Course page."><br>
+</p>
+
+<p>To remedy this, I sketched out prototypes for the top-level architecture and some secondary architecture.
+  <br><img class="img-responsive" src="/img/FTB-MenuPrototype1.png" alt="Menu prototype number 1."><br>
+  <br><img class="img-responsive" src="/img/FTB-MenuPrototype2.png" alt="Menu prototype number 2."><br>
+After showing these ideas to my team and some faculty, it was clear that I was on the right track. So, after a little more tweaking, the Faculty Resources portion of the course menu was finished.
+  <br><img class="img-responsive" src="/img/FTB-MenuFinal.png" alt="The final version of the Faculty Resources portion of the site menu.">
+</p>
+
+<p>A big advantage of using this site navigation is that it also previews the LMS's capabilities when I open a page, such as "Building Your Course".
+<br><img class="img-responsive" src="/img/FTB-ContentArea1-List.png" alt="Building Your Course content."></p>
+
+<h4>Catered Content</h4>
+<p>After restructuring the site navigation, I developed a three-stage approach to dealing with missing and misorganized content:
+<ol type=1>
+    <li> Organize existing content in accordance with the new site map.</li>
+    <li> Add priority content.</li>
+    <li> Develop and implement a content roadmap, to include both the templates for content and the topics themselves.</li>
+  </ol>
+The first two stages were, essentially, first aid. For instance, moving "Adding scrollbars to Grade Center on Macs" out of "Inside Your Course" and into "Additional Resources".
+<br><img class="img-responsive" src="/img/OLD-FTB-ContentArea1.PNG" alt="Faculty resources from original toolbox."></p>
+
+<p>For the third stage, I started with content templates because it would allow me to:
+  <ul>
+    <li> Provide a consistent experience for faculty;</li>
+    <li> Ensure that the copy addressed the needs of the faculty through the design of the template;</li>
+    <li> Make it possible to outsource the "how to" guides by linking to the LMS help site; and</li>
+    <li> Speed up the copy writing process (which is helpful, since I am a one-man shop).</li>
+  </ul>
+I quickly went from sketches of a few possibilities down to two different content templates, and developed two prototypes.
+[Carousel of shots here]
+</p>
+
+<h4>Style Guide</h4>
+<p>The style across the original Toolbox was inconsistent.
+[carousel]
+To provide a consistent user experience, I created a style guide for the Toolbox. To keep things simple, I stuck with the defaults in the LMS's text-editor for things such as font. I also added the following rules such as:
+  <ul>
+    <li>Black font for content.</li>
+    <li>Blue (#0000FF) font for in-page headers to help further organize content (such as when a list of quizzes begins).</li>
+    <li>Dark Cyan-Azure (#0099CC) for quizzes.</li>
+    <li>Use highlighting to emphasize important information such as warngings, known issues, and system downtime.</li>
+  </ul>
+These rules provided a consistent user experience and helped visually chunk content on a page.
+  <br><img class="img-responsive" src="/img/FTB-ContentArea1.PNG" alt="Building Your Course page."><br>
+</p>
+
+
 </section>
 
 <section id="Results">
