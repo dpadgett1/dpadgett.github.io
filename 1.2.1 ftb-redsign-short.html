@@ -1,12 +1,12 @@
 ---
 layout: static1
-title: Saving Time With User-Centered Design
+title: Retooling the Faculty Toolbox
 permalink: /ftb-redesign-short
 ---
 
 <section id="challenge">
 <h2>The Challenge</h2>
-<p><u>Background</u>: The Faculty Toolbox was created as a resource for faculty to learn about the US Air Force Academy's Learning Management System (LMS). When I started my current role I took over the development of the Toolbox. There were several usability problems that were apparent from day one.</p>
+<p><u>Background</u>: The Faculty Toolbox is a resource for US Air Force Academy faculty to learn about the Academy's Learning Management System (LMS). When I started my role at the Academy I took over the development of the Toolbox. There were several usability problems that were apparent from day one.</p>
 
 <p><u>Goal</u>: Redesign and rebrand the Faculty Toolbox to increase usability and traffic to the site.</p>
 
@@ -20,16 +20,16 @@ permalink: /ftb-redesign-short
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vQQojCNcy7bVGM3VZEIszkn1-W4So6RxpEDPbI-lZTvincEJtNEuliuof_VzvISeZH-QAvnroc8SJLu/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
-Common to all personas was a desire for information to be easy to find and the navigation to be “intuitive”. In this case, an “intuitive” navigation is one which maps a three-component mental model faculty have for building a course: course content and delivery, course administration, and assessment.
+Common to all personas was a desire for information to be easy to find and the navigation to be “intuitive”. In this case, an “intuitive” navigation is one which corresponds to the mental model faculty have for building a course: course content and delivery, course administration, and assessment.
 </p>
 
 
 <h3>UX Methods</h3>
 Along with user research, the main UX skills used in this project were:
 <ul>
-  <li><u>Information Architecture</u>: The original site navigation did not reflect the mental model faculty use for building courses, so I redesigned the site navigation and link names to reflect that model.</li>
+  <li><u>Information Architecture</u>: Rdesignin the site navigation and link names to reflect the course building mental model.</li>
   <li><u>Sketching and Wireframing</u>: Creating content templates required ideating, and then sketching and wireframing, solutions for presenting content to faculty.</li>
-  <li><u>UI Style Guide</u>: The headers and fonts varied from page to page in the original Toolbox, so I created a style guide to standardize the look and feel of the site.</li>
+  <li><u>Creating a Style Guide</u>: Developing and implementing a style guide to standardize the look and feel of the site.</li>
 </ul>
 
 
@@ -38,13 +38,13 @@ Along with user research, the main UX skills used in this project were:
 <ol type=1>
     <li> Site navigation that was not “intuitive” because it did not reflect the mental model faculty have for course building.</li>
     <li> Content was not catered to the needs of the faculty at USAFA.</li>
-    <li> No consistent use of fonts, headings, and colors to visually organize site content.</li>
+    <li> Inconsistent use of fonts, headings, and colors to visually organize site content.</li>
 </ol></p>
 
 <h4>Site Navigation</h4>
 <p>The original site navigation did not reflect the mental model faculty use for building their courses. 
 <br><img class="img-responsive" src="/img/OLD-FacultyToolbox-Menu1.png" alt="Original Faculty Toolbox navigation menu."><br>
-For instance, "Inside Your Course" was too broad a label, and even when I opended it content wasn't organized according the mental model.
+"Inside Your Course" promised a page that reflected the course building mental model, but the content on that page was not organized according the mental model.
 <br><img class="img-responsive" src="/img/OLD-FTB-InsideYourCourse.PNG" alt="Inside Your Course page."><br>
 </p>
 
@@ -78,29 +78,33 @@ For instance, "Inside Your Course" was too broad a label, and even when I opende
   </div>
  <!-- <br><img class="img-responsive" src="/img/FTB-MenuPrototype1.png" alt="Menu prototype number 1."><br>
   <br><img class="img-responsive" src="/img/FTB-MenuPrototype2.png" alt="Menu prototype number 2."><br>-->
-After showing these ideas to my team and some faculty, it was clear that I was on the right track. So, after a little more tweaking, the Faculty Resources portion of the course menu was finished.
+I put the three components of the mental model at the top level because it would provide quicker access to relevant content and clarified what you would find on each page. (<q>Inside Your Course</q> was too broad a label to be helpful.) I presented these ideas to my team and some faculty, and, after a little more tweaking, the Faculty Resources portion of the course menu was finished.
   <br><img class="img-responsive" src="/img/FTB-MenuFinal.png" alt="The final version of the Faculty Resources portion of the site menu.">
 </p>
 
-<p>A big advantage of using this site navigation is that it also previews the LMS's capabilities when I open a page, such as "Building Your Course".
+<p>Setting up the top-level navigation this way also gave faculty a preview the LMS's capabilities when they opened a page, such as "Building Your Course".
 <br><img class="img-responsive" src="/img/FTB-ContentArea1-List.png" alt="Building Your Course content."></p>
 
 <h4>Catered Content</h4>
-<p>After restructuring the site navigation, I developed a three-stage approach to dealing with missing and misorganized content:
+<p>After restructuring the site navigation, I developed a four-stage approach to dealing with missing and misorganized content:
 <ol type=1>
     <li> Organize existing content in accordance with the new site map.</li>
     <li> Add priority content.</li>
+    <li> Determine what content was missing.</li>
     <li> Develop and implement a content roadmap, to include both the templates for content and the topics themselves.</li>
   </ol>
 The first two stages were, essentially, first aid. For instance, moving "Adding scrollbars to Grade Center on Macs" out of "Inside Your Course" and into "Additional Resources".
 <br><img class="img-responsive" src="/img/OLD-FTB-ContentArea1.PNG" alt="Faculty resources from original toolbox."></p>
 
-<p>For the third stage, I started with content templates because it would allow me to:
+<p>I waited to identify missing content until the third stage because it would be easier to see the gaps once I knew how to categorize the content we already had. And drafting an initial list of missing content would help me develop template prototypes.</p>
+
+<p>For the fourth stage, I started with content templates because it would allow me to:
   <ul>
     <li> Provide a consistent experience for faculty;</li>
     <li> Ensure that the copy addressed the needs of the faculty through the design of the template;</li>
     <li> Make it possible to outsource the "how to" guides by linking to the LMS help site; and</li>
     <li> Speed up the copy writing process (which is helpful, since I am a one-man shop).</li>
+    <li> Help me refine the list of content that I thought was missing.</li>
   </ul>
 I quickly went from sketches of a few possibilities down to two different content templates, and developed two prototypes.
 <div id="Templates" class="carousel slide" data-ride="carousel">
@@ -175,7 +179,7 @@ I quickly went from sketches of a few possibilities down to two different conten
       <span class="sr-only">Next</span>
     </a>
   </div>
-To provide a consistent user experience, I created a style guide for the Toolbox. To keep things simple, I stuck with the defaults in the LMS's text-editor for things such as font. I also added the following rules such as:
+To provide a consistent user experience, I created a style guide for the Toolbox. To keep things simple, I stuck with the defaults in the LMS's text-editor for things such as font. I then added the following rules:
   <ul>
     <li>Black font for content.</li>
     <li>Blue (#0000FF) font for in-page headers to help further organize content (such as when a list of quizzes begins).</li>
@@ -192,8 +196,8 @@ These rules provided a consistent user experience and helped visually chunk cont
 <section id="Results">
 <h2>Results</h2>
 <p><ol>
-<li> 46.3% increase in traffic since the redesign, and new users visiting the site every month.</li>
-<li> Over 50% of faculty have used the Toolbox and voluntarily adopted Blackboard in under two years ago and despite some very vocal critics.</li>
+<li> 46.3% increase in traffic since the redesign, and new users are visiting the site every month.</li>
+<li> Over 50% of faculty have used the Toolbox and voluntarily adopted Blackboard in under two years (and despite some very vocal critics).</li>
 <li> A consistent user experience across the Faculty Toolbox website.</li>
 <li> The implementation of design thinking in LMS-related training at the Academy.</li>
 </ol></p>
