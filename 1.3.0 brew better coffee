@@ -5,19 +5,45 @@ permalink: /brew-better-coffee
 ---
 <p>DISCLAIMER: This is not a project done for a company. Making coffee is a part of my, and many of my friends', morning routine. I'm always looking for easy ways to up my coffee game, so I thought I'd design a mobile app to do just that. Apart from being an app I'd actually use, designing it also let me focus on developing my prototyping skills using the Sketch App.</p>
 
+<section id="challenge">
 <h2>The Challenge</h2>
-<p> </p>
+<p><u>Background</u>: There are many components to making a high-quality pour over coffee. If you’re not a barista, it can be tricky to improve how well you brew. </p>
 
-<h2>User Research</h2>
+<p><u>Goal</u>: Create a mobile app that lets you track important metrics about pour overs you make, assign a rating to each cup, and provides feedback/suggestions for improving tour skill. </p>
 
-<h2>Functionality and Priorities</h2>
+<p><u>My Role</u>: Product designer and user researcher.</p> 
+</section>
 
-<h2>Wireframes and Prototypes</h2>
 
-<h2>Apple Watch Prototypes</h2>
+<section id="process">
+<h2>The Design Process</h2>
+<h3>User Research</h3>
+
+
+<h3>UX Methods</h3>
+The main UX skills used in this project were:
+<ul>
+ <li><u>SKILL</u>: DESCRIPTION</li>
+ <li><u>SKILL</u>: DESCRIPTION</li>
+ <li><u>SKILL</u>: DESCRIPTION</li>
+ <li><u>SKILL</u>: DESCRIPTION</li>
+</ul>
+
+<h3>Design Decisions</h3>
+<p>This is all about prioritizing functionality and showing off some Sketch skills.</p>
+
+<h4>Wireframes and Prototypes</h4>
+
+<h4>Apple Watch Prototypes</h4>
 <p>The main feature of this thing is the stopwatch. A minimal Apple watch app lets users record their brew using their watch. They can also rate their brew, and later on add notes from their phone (or use Siri to dictate them). </p>
+</section>
 
+
+
+
+<section id="results">
 <h2>Results</h2>
 <p>As I mentioned at the top, this was a fictional project. My aim was to design an app to solve a problem that I (and my friends) have when it comes to making pour-over coffee: how do we get better making only one or two cups a day, and without any mentoring? This app makes it simple and easy torecord important metrics for brewing coffee. With some built in reminders about what you liked and what you didn't (and maybe a little help from some AI), everyone can brew better coffee.</p>
 
 <p>P.S. Interested in actually developing this app? I'm more than willing to talk about how to turn this into a reality. Please see my <a href=/contact>contact page</a> to get in touch.</p>
+</section>
