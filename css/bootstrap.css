@@ -5850,16 +5850,16 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #8A8A8A \9; /*#000 */
-  background-color: #8A8A8A/*rgba(0, 0, 0, 0)*/;
-  border: 1px solid #8A8A8A /*#fff*/;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
   border-radius: 10px;
 }
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #8A8A8A /*#fff*/ ;
+  background-color: #fff;
 }
 .carousel-caption {
   position: absolute;
@@ -5869,7 +5869,7 @@ button.close {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #8A8A8A /*#fff*/ ;
+  color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
